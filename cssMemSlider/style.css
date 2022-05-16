@@ -30,7 +30,7 @@ input[name="slider"] {
   width: 100%;
   overflow: hidden;
   border-radius: 5%;
-  /* box-shadow: rgba(0, 0, 0, 0.16) 0 0.2rem 0.35rem, rgba(0, 0, 0, 0.23) 0 0.2rem 0.35rem; */
+  box-shadow: rgba(255, 255, 255, 0.16) 0 0.35rem 0.55rem, rgba(255, 255, 255, 0.23) 0 0.35rem 0.55rem;
 }
 
 .slides {
@@ -91,30 +91,28 @@ label {
 }
 
 label:hover .circle {
-  background-color: rgb(35, 80, 121);
-  border-color: rgb(35, 80, 121);
+  background-color: rgb(99, 101, 103);
+  border-color: rgb(99, 101, 103);
   transform: translateY(-0.13rem);
-  box-shadow: rgba(0, 0, 0, 0.25) 0 0.9rem 1.7rem, rgba(0, 0, 0, 0.22) 0 0.6rem 0.6rem;
 }
 
 .circle {
   width: 1.15rem;
   height: 1.15rem;
   border-radius: 50%;
-  background-color: #71abfe;
-  border: 0.2rem solid #71abfe;
+  background-color: #ffffff;
+  border: 0.2rem solid #ffffff;
   transition: all 0.2s ease-in-out;
 }
 
-
-/* Main Logic */
+/***************************** MAIN LOGIC *****************************/
 
 #slide1:checked~.wrapper .labels>label:nth-child(1)>.circle,
 #slide2:checked~.wrapper .labels>label:nth-child(2)>.circle,
 #slide3:checked~.wrapper .labels>label:nth-child(3)>.circle,
 #slide4:checked~.wrapper .labels>label:nth-child(4)>.circle {
-  background-color: rgb(35, 80, 121);
-  border-color: rgb(35, 80, 121);
+  background-color: rgb(99, 101, 103);
+  border-color: rgb(99, 101, 103);
 }
 
 label:active .circle,
@@ -130,9 +128,8 @@ label:active .circle,
 #slide2:checked:hover~.wrapper .labels>label:nth-child(2)>.circle,
 #slide3:checked:hover~.wrapper .labels>label:nth-child(3)>.circle,
 #slide4:checked:hover~.wrapper .labels>label:nth-child(4)>.circle {
-  background-color: rgb(35, 80, 121);
-  border-color: rgb(35, 80, 121);
-  box-shadow: rgba(0, 0, 0, 0.25) 0 0.9rem 1.7rem, rgba(0, 0, 0, 0.22) 0 0.6rem 0.6rem;
+  background-color: rgb(99, 101, 103);
+  border-color: rgb(99, 101, 103);
 }
 
 #slide1:checked~.slides-wrapper .slides {
@@ -166,6 +163,8 @@ label:active .circle,
 #slide4:checked~.wrapper .description-wrapper .descriptions {
   transform: translateX(-75%);
 }
+
+/***************************** MEDIA QUERIES *****************************/
 
 @media (max-width: 28.1rem) {
   .wrapper {
